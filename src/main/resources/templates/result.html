@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Submission Result </title>
+	<link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+</head>
+<body>
+	<div class="container">
+		<h1>Thank you for your submission!</h1>
+		<div class="result">
+			<p>
+				<strong>Name : </strong>
+				<span th:text="${submission.name}"></span>
+			</p>
+			<p>
+				<strong>Email : </strong>
+				<span th:text="${submission.email}"></span>
+			</p>
+			<p>
+				<strong>Branch : </strong>
+				<span th:text="${submission.phone}"></span>
+			</p>
+			<p>
+				<strong>Message : </strong>
+				<span th:text="${submission.address}"></span>
+			</p>		
+		</div>
+	</div>
+</body>
+</html>
